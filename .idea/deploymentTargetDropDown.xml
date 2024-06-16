@@ -5,9 +5,6 @@
       <entry key="DashboardActivity">
         <State />
       </entry>
-      <entry key="DashboardActivity (1)">
-        <State />
-      </entry>
       <entry key="DashboardActivity (2)">
         <State />
       </entry>
@@ -15,6 +12,9 @@
         <State />
       </entry>
       <entry key="DashboardActivity (4)">
+        <State />
+      </entry>
+      <entry key="MainActivity">
         <State />
       </entry>
       <entry key="app">
