@@ -8,7 +8,7 @@
     tools:context=".activity.ForgetActivity">
 
     <EditText
-        android:id="@+id/editForgetemail"
+        android:id="@+id/Forgetemail"
         android:layout_width="match_parent"
         android:layout_height="42dp"
         android:layout_marginTop="53dp"
@@ -19,7 +19,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <Button
-        android:id="@+id/buttonSend"
+        android:id="@+id/btnSend"
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:layout_marginTop="18dp"
