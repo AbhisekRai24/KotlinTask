@@ -5,12 +5,12 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.DashboardActivity">
+    tools:context=".ui.activity.DashboardActivity">
 
     <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="433dp"
-        android:layout_height="0dp"
+        android:id="@+id/imageView5"
+        android:layout_width="429dp"
+        android:layout_height="734dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -20,32 +20,19 @@
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/dashnav"
-        android:layout_width="0dp"
+        android:layout_width="412dp"
         android:layout_height="87dp"
-        android:layout_marginBottom="2dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/items_nav" />
 
     <FrameLayout
-        android:layout_width="377dp"
-        android:layout_height="552dp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="90dp">
+        android:id="@+id/dashframlayout"
+        android:layout_width="410dp"
+        android:layout_height="568dp"
+        app:layout_constraintBottom_toTopOf="@+id/dashnav"
+        app:layout_constraintStart_toStartOf="parent">
 
     </FrameLayout>
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="141dp"
-        android:layout_height="41dp"
-        android:background="@color/grey"
-        android:text="Welcome"
-        android:textColor="@color/white"
-
-        tools:layout_editor_absoluteX="42dp"
-        tools:layout_editor_absoluteY="26dp" />
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,13 +1,13 @@
-package com.example.myproject.activity
+package com.example.myproject.ui.activity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
-import com.example.myproject.Fragment.HomeFragment
-import com.example.myproject.Fragment.ProfileFragment
-import com.example.myproject.Fragment.SearchFragment
+import com.example.myproject.ui.fragments.HomeFragment
+import com.example.myproject.ui.fragments.ProfileFragment
+import com.example.myproject.ui.fragments.SearchFragment
 import com.example.myproject.R
 import com.example.myproject.databinding.ActivityDashboardBinding
 
@@ -29,18 +29,18 @@ class DashboardActivity : AppCompatActivity() {
 
 
 
-        dashboardBinding.dashnav.setOnItemSelectedListener {
-            when(it.itemId){
-
-                R.id.home -> replaceFragment(HomeFragment())
-                R.id.profile -> replaceFragment(ProfileFragment())
-                R.id.search -> replaceFragment((SearchFragment()))
-
-                else -> {}
-            }
-            true
+//        dashboardBinding.dashnav.setOnItemSelectedListener {
+//            when(it.itemId){
+//
+//                R.id.home -> replaceFragment(HomeFragment())
+//                R.id.profile -> replaceFragment(ProfileFragment())
+//                R.id.search -> replaceFragment((SearchFragment()))
+//
+//                else -> {}
+//            }
+//            true
 
         }
 
 
-}}
+}

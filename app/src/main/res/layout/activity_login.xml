@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.MainActivity">
+    tools:context=".ui.activity.MainActivity">
 
 
     <ImageView
@@ -68,13 +68,22 @@
 
     <TextView
         android:id="@+id/textViewReg"
-        android:layout_width="247dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="72dp"
-        android:layout_marginBottom="55dp"
-        android:text="Dont have an account? Click here"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonLog" />
+        android:layout_width="144dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="656dp"
+        android:text="Dont have an account?"
+        app:layout_constraintStart_toStartOf="@+id/buttonLog"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/textRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="657dp"
+        android:textColor="@color/purple"
+        android:text="Resgister here"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        tools:layout_editor_absoluteX="237dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
