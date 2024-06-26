@@ -18,25 +18,25 @@
 
 
             <TextView
-                android:id="@+id/lblName"
+                android:id="@+id/labelName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="26dp"
-                android:layout_marginTop="7dp"
+                android:layout_marginStart="36dp"
+                android:layout_marginBottom="16dp"
                 android:text="Name: "
                 android:textSize="15sp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
 
             <TextView
-                android:id="@+id/lblDescription"
+                android:id="@+id/labelDescription"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="75dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginStart="204dp"
+                android:layout_marginTop="28dp"
                 android:text="Description: "
                 android:textSize="15sp"
-                app:layout_constraintStart_toEndOf="@+id/imageView"
+                app:layout_constraintStart_toStartOf="@+id/imageViewDisplay"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ProgressBar
@@ -44,20 +44,41 @@
                 style="?android:attr/progressBarStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintBottom_toBottomOf="@+id/imageView"
-                app:layout_constraintEnd_toEndOf="@+id/imageView"
-                app:layout_constraintStart_toStartOf="@+id/imageView"
-                app:layout_constraintTop_toTopOf="@+id/imageView" />
+                app:layout_constraintBottom_toBottomOf="@+id/imageViewDisplay"
+                app:layout_constraintEnd_toEndOf="@+id/imageViewDisplay"
+                app:layout_constraintStart_toStartOf="@+id/imageViewDisplay"
+                app:layout_constraintTop_toTopOf="@+id/imageViewDisplay" />
 
             <ImageView
-                android:id="@+id/imageView"
+                android:id="@+id/imageViewDisplay"
                 android:layout_width="136dp"
                 android:layout_height="130dp"
-                android:layout_marginStart="17dp"
-                android:layout_marginTop="7dp"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="12dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/baseline_add_a_photo_24" />
+
+            <TextView
+                android:id="@+id/labelPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="68dp"
+                android:layout_marginTop="15dp"
+                android:text="Price"
+                app:layout_constraintStart_toEndOf="@+id/imageViewDisplay"
+                app:layout_constraintTop_toBottomOf="@+id/labelDescription" />
+
+            <TextView
+                android:id="@+id/btnEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="144dp"
+                android:layout_marginEnd="16dp"
+                android:text="Edit"
+                android:textColor="@color/purple"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

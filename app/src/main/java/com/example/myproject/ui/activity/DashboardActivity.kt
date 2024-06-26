@@ -5,9 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
-import com.example.myproject.ui.fragments.HomeFragment
-import com.example.myproject.ui.fragments.ProfileFragment
-import com.example.myproject.ui.fragments.SearchFragment
 import com.example.myproject.R
 import com.example.myproject.databinding.ActivityDashboardBinding
 
@@ -25,22 +22,6 @@ class DashboardActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         dashboardBinding= ActivityDashboardBinding.inflate(layoutInflater)
-        setContentView(dashboardBinding.root)
+        setContentView(dashboardBinding.root)}}
 
 
-
-//        dashboardBinding.dashnav.setOnItemSelectedListener {
-//            when(it.itemId){
-//
-//                R.id.home -> replaceFragment(HomeFragment())
-//                R.id.profile -> replaceFragment(ProfileFragment())
-//                R.id.search -> replaceFragment((SearchFragment()))
-//
-//                else -> {}
-//            }
-//            true
-
-        }
-
-
-}
